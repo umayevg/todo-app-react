@@ -1,5 +1,5 @@
 .article {
-  min-width: 600px;
+  width: 600px;
   background: rgba(255, 255, 255, 0.657);
   border-radius: 20px;
   padding: 20px 55px 30px;
@@ -18,4 +18,22 @@
     padding-top: 10px;
   }
 
+}
+
+
+@media (max-width: 768px) {
+  .article {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .article {
+    width: 400px;
+    padding: 10px;
+
+    &Title {
+      font-size: 26px;
+    }
+  }
 }
